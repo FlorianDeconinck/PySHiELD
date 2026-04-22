@@ -44,8 +44,9 @@ jobs:
         uses: actions/checkout@v6
         with:
           submodules: 'recursive'
-          repository: NOAA-GFDL/pySHiELD
+          repository: FlorianDeconinck/pySHiELD
           path: pySHiELD
+          ref: feature/data_dimension_fields
 
       - name: 'Setup Python ${{ inputs.python_version && inputs.python_version || env.python_default }}'
         uses: actions/setup-python@v6
